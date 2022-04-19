@@ -1,4 +1,4 @@
-FROM node:14-alpine AS development
+FROM node:17.9-alpine3.14 AS development
 ENV NODE_ENV development
 # Add a work directory
 WORKDIR /app
@@ -13,7 +13,7 @@ EXPOSE 3000
 # Start the app
 CMD [ "yarn", "start" ]
 
-FROM node:14-alpine AS builder
+FROM node:17.9-alpine3.14 AS builder
 ENV NODE_ENV production
 # Add a work directory
 WORKDIR /app
