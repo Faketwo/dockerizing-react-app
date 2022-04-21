@@ -3,11 +3,13 @@ version: "3.8"
 services:
   app:
     container_name: react-docker-dev
-    image: react-docker-dev
     build:
       context: .
-      target: development
     volumes:
       - ./src:/app/src
     ports:
       - 3000:3000
+    environment:
+      aaa: ${AAA}
+    command: "tail -f /dev/null"
+    
