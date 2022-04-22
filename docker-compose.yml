@@ -9,7 +9,4 @@ services:
       - ./src:/app/src
     ports:
       - 3000:3000
-    environment:
-      aaa: ${AAA}
     command: "tail -f /dev/null"
-    
