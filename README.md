@@ -12,11 +12,19 @@
 
 # 指令
 ### docker-compose up -d
+啟動所有容器
 
-### docker-compose up -d --build 
-
-### docker-compose down
-
-### docker-compose ps
+### docker-compose up -d --build
+建立鏡像並啟動所有容器
 
 ### docker exec -it react-docker-dev sh
+進入容器
+
+### npm start
+啟動專案dev-server
+
+### docker-compose down
+關閉所有容器
+
+### docker-compose ps
+顯示所有容器
